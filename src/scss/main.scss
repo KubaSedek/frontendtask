@@ -1,3 +1,63 @@
-body {
-    color: red;
+* {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1024px;
+    position: relative;
+}
+
+#header {
+    width: 100%;
+    border-bottom: 1px solid black;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    h1 {
+        font-size: 20px;
+        font-family: Roboto;
+        text-align: center;
+        padding-top: 15px;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        li {
+            display: inline-block;
+            list-style-type: none;
+            margin-top: 25px;
+            margin-left: 15px;
+            margin-right: 35px;
+            font-family: Roboto;
+            font-weight: bold;
+            font-size: 15px;
+            color: darkgrey;
+        }
+    }
+    .shop {
+        position: absolute;
+        right: 0px;
+        top: 15px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+// --------------koniec nawigacji------------------
+
+h2 {
+    text-align: center;
+    font-size: 16px;
+}
+
+form {
+    float: left;
+    input {
+        display: block;
+    }
 }
