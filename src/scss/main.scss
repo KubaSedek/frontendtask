@@ -5,8 +5,9 @@
 }
 
 .container {
-    width: 1024px;
+    width: 900px;
     position: relative;
+
 }
 
 #header {
@@ -49,15 +50,61 @@
 
 
 // --------------koniec nawigacji------------------
+section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    h2 {
+        text-align: center;
+        font-size: 16px;
+        font-family: Roboto;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    form {
+        margin-top: 50px;
+        margin-left: 50px;
+        float: left;
+        .spans {
+            margin-left: 15px;
+            margin-bottom: 25px;
+            margin-top: 30px;
+            color: darkgrey;
+            display: flex;
+            font-family: Roboto;
+        }
+        p {
+            font-family: Roboto;
+            font-size: 10px;
+            margin-left: 20px;
+        }
+        input[type="text"] {
+            display: block;
+            border-radius: 5px;
+            border: 2px solid lightgrey;
+            width: 250px;
+            height: 50px;
+            margin-top: 5px;
+            margin-bottom: 25px;
+            font-size: 20px;
+        }
+        input[type="submit"] {
+            background-color: purple;
+            border: 1px solid purple;
+            border-radius: 5px;
+            color: white;
+            width: 250px;
+            height: 50px;
+        }
+        select {
+            width: 250px;
+            height: 50px;
+            border: 2px solid lightgrey;
+            background-color: white;
+        }
+    }
 
-h2 {
-    text-align: center;
-    font-size: 16px;
-}
-
-form {
-    float: left;
-    input {
-        display: block;
+    .order {
+        float: right;
     }
 }
