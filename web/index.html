@@ -17,10 +17,10 @@
                 <h1>ACME STORE</h1>
                 <nav>
                     <ul>
-                        <li>Women</li>
-                        <li>Men</li>
-                        <li>Accessories</li>
-                        <li>Shoes</li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Shoes</a></li>
                     </ul>
                 </nav>
             </div>
@@ -28,8 +28,11 @@
         <section>
             <div class="container">
                 <h2>Checkout</h2>
+                <div class="order-options">
+                    <span class="span">DELIVERY ADRRESS</span>
+                    <span class="span">YOUR ORDER</span>
+                </div>
                 <form class="form" action="index.html" method="post">
-                    <span class="spans">DELIVERY INFO</span>
                     <p>FIRST NAME <span>*</span></p>
                     <input type="text" name="" value="">
                     <p>LAST NAME <span>*</span></p>
@@ -56,7 +59,7 @@
                         <option value="Russia">Russia</option>
                     </select>
                     <br />
-                    <span class="spans">PAYMENT</span>
+                    <span class="span-payment">PAYMENT</span>
                     <p>CARD NUMBER <span>*</span></p>
                     <input type="text" name="" value="">
                     <p>CARD HOLDER <span>*</span></p>
@@ -65,8 +68,20 @@
                     <input type="text" name="" value="">
                     <input type="submit" name="" value="BUY">
                 </form>
-                <div class="order">
-
+                <div class="orders">
+                    <div class="order">
+                        <img src="../src/assets/img/pic-item.png" alt="">
+                        <p>Acme product name</p>
+                        <div class="adding">
+                            <img src="../src/assets/img/icon-minus.svg" alt="">
+                            <p>1</p>
+                            <img src="../src/assets/img/icon-plus.svg" alt="">
+                        </div>
+                        <div class="price">
+                            <p>Price</p>
+                            <p>300$</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
