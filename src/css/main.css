@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0 auto;
   box-sizing: border-box; }
+  @media (max-width: 500px) {
+    * {
+      display: block; } }
 
 .container {
   width: 900px;
@@ -107,22 +110,42 @@ section {
     position: relative;
     margin-right: 60px;
     margin-top: 30px; }
-    section .orders .order img {
-      width: 75px;
-      height: 40px;
-      position: absolute;
-      top: 20px; }
-    section .orders .order p {
-      padding-left: 85px; }
-    section .orders .order .adding {
-      width: 90px;
-      height: 20px;
-      display: flex;
-      align-items: center; }
-      section .orders .order .adding img {
-        width: 20px;
+    section .orders .order {
+      margin-bottom: 20px; }
+      section .orders .order img {
+        width: 75px;
+        height: 40px;
+        float: left; }
+      section .orders .order p {
+        padding-left: 85px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: bold;
+        color: darkgrey; }
+      section .orders .order .adding {
+        width: 90px;
         height: 20px;
-        position: static;
-        display: inline-table; }
-      section .orders .order .adding p {
-        padding-left: 0px; }
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        margin-left: 78px; }
+        section .orders .order .adding img {
+          width: 20px;
+          height: 20px;
+          position: static;
+          display: inline-table; }
+        section .orders .order .adding p {
+          padding-left: 0px;
+          font-size: 13px;
+          font-family: Roboto;
+          color: black; }
+      section .orders .order .price {
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        width: 360px;
+        margin-left: 14px; }
+        section .orders .order .price p {
+          padding-left: 0px;
+          font-family: Roboto;
+          color: black; }
